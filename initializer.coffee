@@ -32,7 +32,10 @@ initialize = do ->
     pageview = -> ga('send', 'pageview', location.href.split('#')[0]); return
 
     if Turbolinks?
-      $(document).on('page:change', pageview)
+      if Turbolinks.supported
+        $(document).on('page:change', pageview)
+      else
+        pageview()
     else
       pageview()
       $(document).on('pjax:end', pageview) if $.fn.pjax?
