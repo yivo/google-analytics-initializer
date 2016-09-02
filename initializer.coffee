@@ -18,13 +18,15 @@ initialize = do ->
 
     ga.l = Date.now?() ? +new Date()
 
-    script       = document.createElement('script')
-    script.type  = 'text/javascript'
-    script.async = true
+    script             = document.createElement('script')
+    script.type        = 'text/javascript'
+    script.async       = true
 
     # Use HTTPS to download script. Google redirects from HTTP to HTTPS.
     # This will save us from one redirect.
-    script.src   = 'https://www.google-analytics.com/analytics.js'
+    script.src         = 'https://www.google-analytics.com/analytics.js'
+    script.crossOrigin = 'anonymous'
+
     document.getElementsByTagName('head')[0]?.appendChild(script)
 
     ga('create', trackingID, 'auto')
