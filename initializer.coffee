@@ -25,7 +25,7 @@ initialize = do ->
     # Use HTTPS to download script. Google redirects from HTTP to HTTPS.
     # This will save us from one redirect.
     script.src         = 'https://www.google-analytics.com/analytics.js'
-    script.crossOrigin = 'anonymous'
+    script.crossOrigin = ''
 
     document.getElementsByTagName('head')[0]?.appendChild(script)
 
