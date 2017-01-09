@@ -2,7 +2,7 @@
   "name": "google-analytics-initializer",
   "homepage": "https://github.com/yivo/google-analytics-initializer",
   "authors": [
-    "Yaroslav Konoplov <yaroslav@inbox.com>"
+    "Yaroslav Konoplov <eahome00@gmail.com>"
   ],
   "description": "This snippet of code automatically initializes google analytics with config retrieved from meta tags. Friendly with Turbolinks and pjax.",
   "main": "initializer.coffee",
@@ -12,9 +12,6 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-    "coffeespec",
-    "source",
-    "spec"
+    "tests"
   ]
 }
