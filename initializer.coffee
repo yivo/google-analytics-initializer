@@ -1,3 +1,7 @@
+###!
+# google-analytics-initializer 1.0.5 | https://github.com/yivo/google-analytics-initializer | MIT License
+###
+  
 initialize = do ->
   initialized = no
 
