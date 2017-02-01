@@ -1,10 +1,13 @@
 {
   "name": "google-analytics-initializer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "This snippet of code automatically initializes google analytics with config retrieved from meta tags. Friendly with Turbolinks and pjax.",
-  "main": "initializer.coffee",
+  "main": "build/google-analytics-initializer.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coffee": "^2.3.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

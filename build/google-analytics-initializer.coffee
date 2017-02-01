@@ -1,5 +1,5 @@
 ###!
-# google-analytics-initializer 1.0.5 | https://github.com/yivo/google-analytics-initializer | MIT License
+# google-analytics-initializer 1.0.6 | https://github.com/yivo/google-analytics-initializer | MIT License
 ###
   
 initialize = do ->
@@ -33,7 +33,7 @@ initialize = do ->
   
       ga('create', trackingID, 'auto')
   
-      pageview = -> ga('send', 'pageview', location.href.split('#')[0]); return
+      pageview = -> ga('send', 'pageview', location.href.split('#')[0])
   
       if Turbolinks?.supported
         $(document).on('page:change', pageview)
