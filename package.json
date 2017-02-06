@@ -1,6 +1,6 @@
 {
   "name": "google-analytics-initializer",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This snippet of code automatically initializes google analytics with config retrieved from meta tags. Friendly with Turbolinks and pjax.",
   "main": "build/google-analytics-initializer.js",
   "dependencies": {},
